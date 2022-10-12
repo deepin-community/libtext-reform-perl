@@ -1,0 +1,144 @@
+libtext-reform-perl (1.20-3) unstable; urgency=medium
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+  * Remove Daniel Ruoso from Uploaders on request of the MIA team.
+    (Closes: #831620)
+
+  [ Salvatore Bonaccorso ]
+  * Bump Debhelper compat level to 9
+  * Declare compliance with Debian policy 3.9.8
+  * Update copyright years for debian/* packaging files
+  * Fix spelling error in manpage as reported by Lintian
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sat, 03 Sep 2016 17:32:01 +0200
+
+libtext-reform-perl (1.20-2) unstable; urgency=medium
+
+  [ Salvatore Bonaccorso ]
+  * Email change: Salvatore Bonaccorso -> carnil@debian.org
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ gregor herrmann ]
+  * debian/control: update {versioned,alternative} (build) dependencies.
+
+  [ Salvatore Bonaccorso ]
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ Axel Beckert ]
+  * debian/copyright: migrate pre-1.0 format to 1.0 using "cme fix dpkg-
+    copyright"
+
+  [ gregor herrmann ]
+  * Strip trailing slash from metacpan URLs.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+  * Convert source package to '3.0 (quilt)' source package format
+  * Bump Debhelper compat level to 8.
+    Adjust versioned Build-Depends on debhelper to debhelper (>= 8).
+  * Add explicit Build-Depends on libmodule-build-perl
+  * Update copyright years for debian/* packaging files
+  * Update debian/copyright file.
+    Refer to Debian systems in general instead of only Debian GNU/Linux
+    systems.
+    Explicitly refer to GPL-1 license text in common-licenses.
+    Remove use of X-Comment field.
+  * Wrap and sort fields in debian/control file
+  * Declare compliance with Debian policy 3.9.6
+  * Declare package as autopkgtestable
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Fri, 05 Jun 2015 07:30:27 +0200
+
+libtext-reform-perl (1.20-1) unstable; urgency=low
+
+  [ gregor herrmann ]
+  * debian/control: Changed: Switched Vcs-Browser field to ViewSVN
+    (source stanza).
+  * debian/control: Added: ${misc:Depends} to Depends: field.
+
+  [ Nathan Handler ]
+  * debian/watch: Update to ignore development releases.
+
+  [ Salvatore Bonaccorso ]
+  * New upstream release
+  * debian/control:
+    - Add myself to uploaders
+  * Bump compat level to 7 and adjust Build-Depends on debhelper.
+  * Minimize debian/rules file and move example listing accordingly
+    to libtext-reform-perl.examples.
+  * Bump Standards-Version to 3.8.3 (no changes)
+  * debian/copyright: Update format to new DEP5 format specification
+    proposal. Update copyright and years. 
+
+ -- Salvatore Bonaccorso <salvatore.bonaccorso@gmail.com>  Sun, 06 Sep 2009 22:57:44 +0200
+
+libtext-reform-perl (1.12.2-1) unstable; urgency=low
+
+  * debian/control: Added: Vcs-Svn field (source stanza); Vcs-Browser
+    field (source stanza); Homepage field (source stanza). Removed: XS-
+    Vcs-Svn fields.
+  * debian/watch: use dist-based URL.
+
+  * New upstream release.
+  * debian/watch: extended regexp for matching upstream releases.
+  * Refresh debian/rules, no functional changes.
+  * Remove debian/libtext-reform-perl.*; don't install README any more.
+  * debian/control: change my email address.
+  * debian/control: add build dependencies on libmodule-build-perl and
+    libtest-pod-perl.
+  * Set Standards-Version to 3.8.0 (no changes).
+  * debian/control: mention module name in long description.
+  * debian/copyright: add specific upstream source location, update
+    copyright/license information.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 20 Jun 2008 20:55:47 +0200
+
+libtext-reform-perl (1.11-6) unstable; urgency=low
+
+  [ Frank Lichtenheld ]
+  * Fix typo in Description
+
+  [ Joey Hess ]
+  * Add self to uploaders.
+
+ -- Joey Hess <joeyh@debian.org>  Sat, 11 Aug 2007 22:37:47 -0400
+
+libtext-reform-perl (1.11-5) unstable; urgency=low
+
+  * Use $(CURDIR) [make] instead of $(PWD) [sh] to fix issues with sudo.
+
+ -- gregor herrmann <gregor+debian@comodo.priv.at>  Sun,  1 Oct 2006 15:00:28 +0200
+
+libtext-reform-perl (1.11-4) unstable; urgency=low
+
+  * Moved debhelper to Build-Depends.
+  * Set Standards-Version to 3.7.2 (no changes).
+  * Set Debhelper Compatibility Level to 5.
+
+ -- gregor herrmann <gregor+debian@comodo.priv.at>  Fri, 16 Jun 2006 17:08:04 +0200
+
+libtext-reform-perl (1.11-3) unstable; urgency=low
+
+  * Adopting package.
+
+ -- Daniel Ruoso <daniel@ruoso.com>  Thu, 27 May 2004 15:58:09 -0300
+
+libtext-reform-perl (1.11-2) unstable; urgency=low
+
+  * debian/control: upgraded to Debian Policy 3.6.1 (no changes)
+
+ -- Ardo van Rangelrooij <ardo@debian.org>  Sat,  7 Feb 2004 22:47:48 -0600
+
+libtext-reform-perl (1.11-1) unstable; urgency=low
+
+  * Initial Release
+    (closes: Bug#205951)
+
+ -- Ardo van Rangelrooij <ardo@debian.org>  Sun, 17 Aug 2003 17:53:02 -0500

@@ -1,0 +1,18 @@
+Description: Fix spelling error in manpage
+Origin: vendor
+Author: Salvatore Bonaccorso <carnil@debian.org>
+Last-Update: 2016-09-03
+Forwarded: https://rt.cpan.org/Ticket/Display.html?id=117463
+Bug: https://rt.cpan.org/Ticket/Display.html?id=117463
+
+--- a/lib/Text/Reform.pm
++++ b/lib/Text/Reform.pm
+@@ -1131,7 +1131,7 @@ hyphenation is used (i.e. break at the I
+ 
+ Words will not be broken if the break would leave less than 2 characters on
+ the current line. This minimum can be varied by setting the 'minbreak' option
+-to a numeric value indicating the minumum total broken characters (including
++to a numeric value indicating the minimum total broken characters (including
+ hyphens) required on the current line. Note that, for very narrow fields,
+ words will still be broken (but I<unhyphenated>). For example:
+ 
